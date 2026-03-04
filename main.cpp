@@ -88,7 +88,7 @@ int main() {
     libro1.setTitulo("Las tres cerdas");
     libro1.setAutor("Erick musanbanick");
     libro1.setIsbn("80020");
-
+//123 prueba
     // Objeto 2: Constructor con parámetros
     Libro libro2("la maldicion de los malgabis", "panfila", "332154");
 
