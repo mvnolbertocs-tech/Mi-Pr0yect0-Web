@@ -15,4 +15,19 @@ std::cout << "Título: " << l1.titulo << "\n";
 std::cout << "Autor: " << l1.autor << "\n";
 std::cout << "ISBN: " << l1.isbn << "\n";
 return 0;
+
+size_t Biblioteca::findByIsbn(const std::string& isbn) const {
+
+    for(size_t i = 0; i < libros.size(); ++i) {
+
+        if(libros[i].getIsbn() == isbn) {
+            return i;
+        }
+
+    }
+
+    return static_cast<size_t>(-1);
 }
+
+}
+
